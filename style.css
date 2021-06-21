@@ -11,3 +11,48 @@ Text Domain: wpcustomtheme
 Tags: Test, testing, tag
 Lorem to the longer description.
 */
+
+body {
+    background: #008b58;
+}
+
+header#masthead {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 50px auto;
+    box-shadow: 0px 0px 10px 1px #ccc;
+    border-radius: 5px;
+    padding: 25px;
+    background: #fff;
+}
+
+.site-description {
+    font-style: italic;
+}
+
+#site-navigation li {
+    list-style-type: none;
+}
+
+#site-navigation li a {
+    text-decoration: none;
+}
+
+#primary {
+    flex-basis: 60%;
+}
+
+#secondary {
+    flex-basis: 20%;
+}

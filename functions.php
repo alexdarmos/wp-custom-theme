@@ -12,6 +12,12 @@ add_theme_support( 'custom-logo' );
 add_theme_support( 'customize-selective-refresh-widgets' );
 add_theme_support( 'starter-content' );
 
+//Enqueue stylesheet
+function wpcustomtheme_enqueue_styles() {
+    wp_enqueue_style( 'main-css', get_stylesheet_directory_uri() . '/style.css', [], time(), 'all' );
+}
+add_action('wp_enqueue_scripts', 'wpcustomtheme_enqueue_styles');
+
 //Add function to register our sidebars
 function wpcustomtheme_widgets_unit() {
     register_sidebar([
